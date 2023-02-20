@@ -1,8 +1,4 @@
 /**
- * last file
- * must win
- */
-/**
   * main - Entry point
  *
  * Return: Always 0 (Success)
