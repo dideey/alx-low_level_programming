@@ -16,6 +16,7 @@ int i = 0;
 for (i = 0; st[i] != '\n'; i++)
 {
 putchar(st[i]);
+putchar('\n');
 }
 return (0);
 }
