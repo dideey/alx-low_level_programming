@@ -14,5 +14,5 @@ for (i = 0; st[i] != '\n'; i++)
 putchar(st[i]);
 }
 putchar('\n');
-return (0);
+return (1);
 }
