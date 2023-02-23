@@ -15,11 +15,11 @@ d = 0;
 
 while (d < 15)
 {
-_putchar(d);
+_putchar('d');
 d++;
 }
 
-_putchar(c);
+_putchar('c');
 c++;
 _putchar('\n');
 }
