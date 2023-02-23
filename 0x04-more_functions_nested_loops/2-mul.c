@@ -4,14 +4,11 @@
  * Return: Always 0
  * @a: first integer
  * @b: second integer
+ * Return: multipication value
  */
 
 int mul(int a, int b)
 {
-int d;
-
-d= (a * b);
-_putchar(d);
-return (0);
+return ( a * b);
 
 }
