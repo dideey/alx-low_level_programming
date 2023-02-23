@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_numbers - it outputs the decimal numbers
- * Return: Always 0 .
+ * Return: nothing.
  */
 
 void print_numbers(void)
