@@ -14,7 +14,7 @@ n = 0;
 while (s[n] != '\0')
 n++;
 
-for (a = n - 1; n >= 0; s--)
+for (a = n - 1; a >= 0; s--)
 {
 _putchar(s[a]);
 }
