@@ -17,11 +17,12 @@ temp = *s;
 
 n = 0;
 
+while (s[n] != '\0')
+n++;
+
 _putchar(temp);
 _putchar('\n');
 
-while (s[n] != '\0')
-n++;
 
 for (i = n - 1; i >= 0; i--)
 {
