@@ -11,8 +11,9 @@ void rev_string(char *s)
 {
 int i, n;
 
-char temp;
-temp = *s;
+char *d[]
+
+strcpy(*s, *d);
 
 
 n = 0;
@@ -20,7 +21,7 @@ n = 0;
 while (s[n] != '\0')
 n++;
 
-_putchar(temp);
+_putchar(*d);
 _putchar('\n');
 
 
