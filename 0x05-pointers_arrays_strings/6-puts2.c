@@ -1,4 +1,6 @@
 #include "main.h"
+#include <string.h>
+
 /**
  * puts2 - lay out characters
  * @str: input string.
@@ -8,18 +10,11 @@
 
 void puts2(char *str)
 {
-int i, n;
-
-n = 0;
-
-while (str[n] != '\0')
-n++;
-
-for (i = 0; i < n;  n += 2)
+int l, i;
+l = strlen(str);
+for (i = 0; i < l; i += 2)
 {
-_putchar(str[n]);
+_putchar(str[i]);
 }
-
 _putchar('\n');
-
 }
