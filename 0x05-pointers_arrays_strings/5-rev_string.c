@@ -9,29 +9,21 @@
 
 void rev_string(char *s)
 {
-int i, n;
+char rv = s[0];
+int d = 0;
+int e;
 
-char *d[]
-
-strcpy(*s, *d);
-
-
-n = 0;
-
-while (s[n] != '\0')
-n++;
-
-_putchar(*d);
-_putchar('\n');
-
-
-for (i = n - 1; i >= 0; i--)
+while (s[d] != '\0')
+d++;
+for (e = 0; e < d; e++)
 {
-_putchar(s[i]);
+d--;
+rv = s[e];
+s[e] = s[d];
+s[d] = rv;
+
+
 }
-
-_putchar('\n');
-
 
 
 
