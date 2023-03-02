@@ -23,11 +23,11 @@ _putchar(0);
 }
 else if (a < b)
 {
-_putchar(-1);
+_putchar(-15);
 }
 else
 {
-_putchar(1);
+_putchar(15);
 }
 return (0);
 }
