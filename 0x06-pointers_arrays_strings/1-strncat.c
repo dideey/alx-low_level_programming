@@ -22,7 +22,7 @@ dest[i] = src[j];
 j++;
 i++;
 }
-
+_putchar('\n');
 
 return (dest);
 }
