@@ -8,8 +8,6 @@
  */
 
 char *_strstr(char *haystack, char *needle)
-
-char i, j;
 {
 
 for (; *haystack != '\0'; haystack++)
