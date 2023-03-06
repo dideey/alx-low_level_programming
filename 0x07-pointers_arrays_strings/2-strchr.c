@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stddef.h>
 /**
- * _strch - searches for a string
+ * _strchr - searches for a string
  * @s:string being analysed
  * @c: the character being searched
  * Return:c if the character is found else NULL
