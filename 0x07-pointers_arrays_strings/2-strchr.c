@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 /**
  * _strchr - searches for a string
  * @s:string being analysed
@@ -21,7 +20,7 @@ return (&s[i]);
 }
 
 }
-return (NULL);
+return (0);
 }
 
 
