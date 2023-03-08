@@ -4,7 +4,6 @@ int _root(int n, int l);
 /**
  *  _sqrt_recursion - rights square root
  *  @n:input integer
- *  @l:number
  *  Return:int
  */
 int _sqrt_recursion(int n)
