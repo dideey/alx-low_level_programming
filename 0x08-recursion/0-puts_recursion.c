@@ -3,14 +3,19 @@
  * _puts_recursion - outputs a string
  * @s: input string
  * Return: nill
- *
  */
 void _puts_recursion(char *s)
 {
-int i = 0;
-for (; s[i] != '\0'; i++)
-{
-_putchar(s[i]);
-}
-return;
+if (*s == '\0')
+	{
+	_putchar('\n');
+	return;
+	}
+_putchar(*s);
+s++;
+_puts_recursion(s);
+
+
+
+
 }
