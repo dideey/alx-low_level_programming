@@ -2,6 +2,7 @@
 /**
  * is_prime_number - checks prime number
  * @n:number
+ * @m:iderator
  * Return:0 or 1
  */
 int prime_checker(int n, int m);
@@ -22,7 +23,7 @@ return (0);
 /**
  * prime_checker - checks
  * @n:number
- * @m: number
+ * @m:iderator
  * Return: 0 or 1
  */
 
@@ -40,5 +41,5 @@ if (n % m == 0 && n == m)
 {
 return (1);
 }
-return prime_checker(n, m + 1);
+return (prime_checker(n, m + 1));
 }
