@@ -16,5 +16,7 @@ else
 {
 return (0);
 }
+return (is_palindrome(s + 1));
+
 
 }
