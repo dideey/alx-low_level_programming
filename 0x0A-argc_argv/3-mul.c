@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <stdlib.h>
 /**
  * main - multiply
  * @argc:count
@@ -11,15 +12,18 @@
 
 int main(int argc, char *argv[])
 {
-int mul;
+int mul, x, y;
 
 if (argc > 3 || argc < 3)
 {
 printf("Error\n");
 return (1);
 }
+x = atoi(argv[1]);
+y = atoi(argv[2]);
 
-mul = *argv[1] * *argv[2];
+mul = (x) *(y);
+
 printf("%d\n", mul);
 return (0);
 }
