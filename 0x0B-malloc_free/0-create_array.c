@@ -19,7 +19,6 @@ return (NULL);
 }
 ar = malloc(size * sizeof(char));
 *ar = c;
-free(ar);
 
 return (ar);
 
