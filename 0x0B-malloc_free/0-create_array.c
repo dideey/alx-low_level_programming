@@ -21,5 +21,5 @@ ar = malloc(size * sizeof(char));
 *ar = c;
 
 return (ar);
-
+free(ar);
 }
