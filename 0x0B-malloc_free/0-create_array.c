@@ -18,11 +18,11 @@ return (NULL);
 }
 ar = malloc(size * sizeof(char));
 
-while (ar[size] != '\0')
+while (*ar != '\0')
 {
 *ar = c;
 }
-size++;
+ar++;
 
 return (ar);
 free(ar);
