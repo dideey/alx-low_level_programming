@@ -18,11 +18,7 @@ return (NULL);
 }
 ar = malloc(size * sizeof(char));
 
-while (*ar != '\0')
-{
 *ar = c;
-}
-ar++;
 
 return (ar);
 free(ar);
