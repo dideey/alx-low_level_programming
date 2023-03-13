@@ -18,7 +18,7 @@ if (size == 0)
 return (NULL);
 }
 ar = malloc(size * sizeof(char));
-ar[size] = c;
+*ar = c;
 free(ar);
 
 return (ar);
