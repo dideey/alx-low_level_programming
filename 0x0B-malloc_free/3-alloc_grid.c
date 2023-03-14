@@ -34,6 +34,7 @@ darr[i] = malloc(width * sizeof(int));
 
 return (darr);
 free(darr);
+free(darr[i]);
 }
 
 
