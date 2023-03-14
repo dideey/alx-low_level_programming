@@ -21,16 +21,18 @@ darr = malloc(height * sizeof(int *));
 
 if (darr == NULL)
 {
-return (NULL);
 free(darr);
+return (NULL);
+
 }
 for (i = 0; i < height; i++)
 {
 darr[i] = malloc(width * sizeof(int));
 if (darr[i] == NULL)
 {
-return (NULL);
 free(darr[i]);
+return (NULL);
+
 }
 }
 return (darr);
