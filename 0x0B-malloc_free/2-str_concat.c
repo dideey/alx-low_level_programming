@@ -15,7 +15,10 @@ int a, b, c, d;
 a = 0;
 b = 0;
 
-
+if (s1 == NULL || s2 == NULL)
+{
+return (NULL);
+}
 while (s1[a] != '\0')
 {
 a++;
@@ -27,7 +30,10 @@ b++;
 }
 
 con = malloc(a + b *sizeof(char) + 1);
-
+if (con == NULL)
+{
+return (NULL);
+}
 for (c = 0; c < a; c++)
 {
 con[c] = s1[c];
