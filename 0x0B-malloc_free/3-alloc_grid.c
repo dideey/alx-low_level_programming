@@ -34,6 +34,7 @@ for (i = 0; i < height; i++)
 {
 free(darr[i]);
 }
+free(darr);
 return (NULL);
 
 }
