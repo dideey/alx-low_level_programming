@@ -31,7 +31,10 @@ for (i = 0; i < height; i++)
 {
 darr[i] = malloc(width * sizeof(int));
 }
-
+if (darr[i] == NULL)
+{
+return (NULL);
+}
 return (darr);
 
 }
