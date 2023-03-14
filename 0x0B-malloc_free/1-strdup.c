@@ -26,7 +26,10 @@ j++;
 }
 
 cop = malloc(j *sizeof(char) + 1);
-
+if (cop == NULL)
+{
+return (NULL);
+}
 for (i = 0; i < j; i++)
 {
 cop[i] = str[i];
