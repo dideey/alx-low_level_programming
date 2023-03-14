@@ -12,11 +12,7 @@ int i;
 
 int **darr;
 
-if (width == 0 || width < 0)
-{
-return (NULL);
-}
-if (height == 0 || height < 0)
+if (width <= 0 || height <= 0)
 {
 return (NULL);
 }
@@ -26,6 +22,7 @@ darr = malloc(height * sizeof(int *));
 if (darr == NULL)
 {
 return (NULL);
+free(darr);
 }
 for (i = 0; i < height; i++)
 {
