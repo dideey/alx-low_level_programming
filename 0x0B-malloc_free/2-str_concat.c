@@ -15,10 +15,11 @@ int a, b, c, d;
 a = 0;
 b = 0;
 
-if (s1 == NULL || s2 == NULL)
+if (s1 == NULL && s2 == NULL)
 {
 return (NULL);
 }
+
 while (s1[a] != '\0')
 {
 a++;
