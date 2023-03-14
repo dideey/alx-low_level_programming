@@ -38,7 +38,7 @@ con[a + d] = s2[d];
 }
 con[a + d + 1] = '\0';
 return (con);
-
+free(con);
 }
 
 
