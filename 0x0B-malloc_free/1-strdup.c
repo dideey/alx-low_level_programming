@@ -25,7 +25,7 @@ while (str[j] != '\0')
 j++;
 }
 
-cop = malloc(j *sizeof(char));
+cop = malloc(j *sizeof(char) + 1);
 
 for (i = 0; i < j; i++)
 {
