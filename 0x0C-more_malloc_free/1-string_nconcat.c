@@ -43,7 +43,7 @@ ncat[c + d] = s2[d];
 }
 ncat[a + b + 1] = '\0';
 return (ncat);
-
+free(ncat);
 
 
 }
