@@ -21,7 +21,7 @@ arr = malloc((max - min + 1) * sizeof(int));
 
 if (arr == NULL)
 	return (NULL);
-while (i < max - min)
+while (i <= max - min)
 {
 arr[i++] = t++;
 }
