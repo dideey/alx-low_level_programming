@@ -24,7 +24,5 @@ for (j = 0; j < nmemb * size; j++)
 ar[j] = 0;
 }
 return (ar);
-free(ar);
-
 
 }
