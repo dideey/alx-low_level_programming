@@ -14,12 +14,12 @@ int *ar;
 if (nmemb == 0 || size == 0)
 	return (NULL);
 
-ar = malloc(nmemb * sizeof(size));
+ar = malloc(nmemb * size);
 
 if (ar == NULL)
 	return (NULL);
 
-for (j = 0; j <= nmemb; j++)
+for (j = 0; j < nmemb * size; j++)
 {
 ar[j] = 0;
 }
