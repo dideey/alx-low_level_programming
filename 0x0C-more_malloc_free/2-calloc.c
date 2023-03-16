@@ -19,7 +19,7 @@ ar = malloc(nmemb *size);
 if (ar == NULL)
 	return (NULL);
 
-for (j = 0; j < nmemb * size; j++)
+for (j = 0; j < nmemb *size; j++)
 {
 ar[j] = 0;
 }
