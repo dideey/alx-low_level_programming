@@ -33,7 +33,7 @@ while (s2[b] != '\0' && b < n)
 {
 b++;
 }
-ncat = malloc((a + b) *sizeof(char) + 1);
+ncat = malloc((a + n + 1) *sizeof(char));
 if (ncat == NULL)
 {
 return (NULL);
@@ -46,7 +46,7 @@ for (d = 0; d < b; d++)
 {
 ncat[c + d] = s2[d];
 }
-ncat[a + b + 1] = '\0';
+ncat[a + n + 1] = '\0';
 return (ncat);
 free(ncat);
 
