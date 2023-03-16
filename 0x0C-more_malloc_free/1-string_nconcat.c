@@ -25,7 +25,7 @@ while (s1[a] != '\0')
 {
 a++;
 }
-if (n >= x)
+if (n > x)
 {
 n = x;
 }
@@ -42,7 +42,7 @@ for (c = 0; c < a; c++)
 {
 ncat[c] = s1[c];
 }
-for (d = 0; d < b; d++)
+for (d = 0; d < n; d++)
 {
 ncat[c + d] = s2[d];
 }
