@@ -1,10 +1,10 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * _calloc - creates an array
- * @nmemb:number of ints
- * @size:their sizes
- * Return:ptr
+ * _calloc - creates an array.
+ * @nmemb:number of ints.
+ * @size:their sizes.
+ * Return:ptr.
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
