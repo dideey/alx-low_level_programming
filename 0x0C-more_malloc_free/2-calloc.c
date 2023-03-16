@@ -14,7 +14,7 @@ int *ar;
 if (nmemb == 0 || size == 0)
 	return (NULL);
 
-ar = malloc(nmemb * size);
+ar = malloc(nmemb *size);
 
 if (ar == NULL)
 	return (NULL);
