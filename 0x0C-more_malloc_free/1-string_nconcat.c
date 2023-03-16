@@ -33,7 +33,7 @@ while (s2[b] != '\0' && b < n)
 {
 b++;
 }
-ncat = malloc((a + n + 1) *sizeof(char));
+ncat = malloc((a + n) *sizeof(char) + 1);
 if (ncat == NULL)
 {
 return (NULL);
