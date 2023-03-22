@@ -19,7 +19,7 @@ if (size <= 0 || array == NULL || cmp == NULL)
 
 for (i = 0; i < size; i++)
 	cmp(array[i]);
-return (array[i]);
+return (i);
 
 if (cmp == 0)
 	return (-1);
