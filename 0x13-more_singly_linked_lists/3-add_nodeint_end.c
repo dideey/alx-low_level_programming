@@ -24,7 +24,7 @@ tmp->next = NULL;
 
 if (*head == NULL)
 {
-     *head = tmp;
+	*head = tmp;
 }
 else
 {
