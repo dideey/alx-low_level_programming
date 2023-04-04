@@ -17,7 +17,7 @@ k = (*head)->n;
 
 tmp = *head;
 
-if (*head == NULL)
+if (*head == NULL || head == NULL)
 {
 	return (0);
 }
