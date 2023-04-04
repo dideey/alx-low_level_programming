@@ -17,6 +17,7 @@ if (tmp == NULL)
 {
 	return (0);
 }
+*head = (*head)->next;
 
 return ((*head)->n);
 free(head);
