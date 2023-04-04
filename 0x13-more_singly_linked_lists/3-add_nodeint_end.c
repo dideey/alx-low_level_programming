@@ -22,11 +22,12 @@ if (tmp == NULL)
 tmp->n = n;
 tmp->next = NULL;
 
-if (!*head)
+if (*head == NULL)
 {
      *head = tmp;
-     return (tmp);
 }
+else
+{
 
 while (tail->next != NULL)
 {
@@ -34,7 +35,7 @@ while (tail->next != NULL)
 }
 tail->next = tmp;
 
-free(tmp);
+}
 return (tmp);
 }
 
