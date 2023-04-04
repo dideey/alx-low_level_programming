@@ -25,7 +25,8 @@ if (new == NULL)
 	return (NULL);
 }
 tra = *head;
-
+if (idx != 0)
+{
 while (j != i)
 {
 tra = tra->next;
@@ -33,6 +34,7 @@ j++;
 }
 new->next = tra->next;
 tra->next = new;
+}
 return (new);
 
 }
