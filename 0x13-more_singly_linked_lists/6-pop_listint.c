@@ -21,7 +21,7 @@ if (*head == NULL)
 {
 	return (0);
 }
-*head = tmp->next;
+*head = (*head)->next;
 
 free(tmp);
 return (k);
