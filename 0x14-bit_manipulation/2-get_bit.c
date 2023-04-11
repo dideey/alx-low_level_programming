@@ -10,7 +10,7 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-if (index != 8 * malloc(sizeof unsigned int))
+if (index >= 8 * (sizeof(unsigned int)))
 {
 	return (-1);
 }
