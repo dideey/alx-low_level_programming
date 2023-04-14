@@ -30,6 +30,12 @@ op = open(filename, O_RDONLY);
 re = read(op, buff, letters);
 wr = write(STDOUT_FILENO, buff, re);
 
+if (op == -1 || re == -1 || wr == -1)
+{
+	free(buff);
+	return (0);
+}
+
 free(buff);
 close(op);
 return (wr);
