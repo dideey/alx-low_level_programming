@@ -2,8 +2,8 @@
 #include "main.h"
 
 /**
- * 
- * @filename:name of txt file
+ * read_textfile - opens and reads file
+ * @filename:name of file tobe reead
  * @letters:no of letters to be printed
  * Return: no of letters that were printed
  *
@@ -23,7 +23,7 @@ buff = malloc(letters * (sizeof(char)));
 
 if (buff == NULL)
 {
-        return (0);
+	return (0);
 }
 
 op = open(filename, O_RDONLY);
