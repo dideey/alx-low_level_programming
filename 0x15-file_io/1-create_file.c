@@ -32,5 +32,5 @@ if (op == -1 || wr == -1)
 	return (-1);
 }
 close(op);
-return (wr);
+return (1);
 }
