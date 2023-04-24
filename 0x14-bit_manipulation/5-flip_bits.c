@@ -8,18 +8,13 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
+unsigned long int xor = n ^ m, bits = 0;
 
-int diff, sum, x;
-diff = n ^ m;
-
-x = diff & (diff - 1);
-sum = 1;
-while (x != 0)
+while (xor > 0)
 {
-sum++;
-x = x & (x - 1);
-
+	bits += (xor & 1);
+	xor >>= 1;
 }
-return (sum);
 
+		return (bits);
 }
