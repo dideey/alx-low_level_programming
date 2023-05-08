@@ -1,0 +1,42 @@
+#include <stdlib.h>
+#include "main.h"
+
+/**
+ * read_textfile - opens and reads file
+ * @filename:name of file tobe reead
+ * @letters:no of letters to be printed
+ * Return: no of letters that were printed
+ *
+ */
+
+ssize_t read_textfile(const char *filename, size_t letters)
+{
+ssize_t re, wr, op;
+char *buff;
+
+if (filename == NULL)
+{
+	return (0);
+}
+
+buff = malloc(letters * (sizeof(char)));
+
+if (buff == NULL)
+{
+	return (0);
+}
+
+op = open(filename, O_RDONLY);
+re = read(op, buff, letters);
+wr = write(STDOUT_FILENO, buff, re);
+
+if (op == -1 || re == -1 || wr != re || wr == -1)
+{
+	free(buff);
+	return (0);
+}
+
+free(buff);
+close(op);
+return (wr);
+}
