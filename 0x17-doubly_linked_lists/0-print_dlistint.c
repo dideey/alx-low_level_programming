@@ -12,7 +12,7 @@ int count = 0;
 var = h;
 while (var != NULL)
 {
-printf("%d\n", tmp->n);
+printf("%d\n", var->n);
 var = var->next;
 count++;
 }

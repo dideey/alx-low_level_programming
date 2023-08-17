@@ -22,7 +22,7 @@ return (new);
 }
 while (var->next)
 {
-tmp = var->next;
+var = var->next;
 }
 new->prev = var;
 var->next = new;
