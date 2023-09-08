@@ -9,23 +9,19 @@
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
+	unsigned long int index;
+	hash_node_t *new_node;
 
-unsigned long int i = (hash_djb2((const unsigned char *)key) % (ht->size));
-
-hash_node_t *item = ht->array[i];
-
-if (ht == NULL || ht->array == NULL || ht->size == 0 ||
-key == NULL || strlen(key) == 0)
-{
+	if (ht == NULL || ht->array == NULL || ht->size == 0 ||
+			key == NULL || strlen(key) == 0)
+		return (NULL);
+	index = key_index((const unsigned char *)key, ht->size);
+	new_node = ht->array[index];
+	while (new_node != NULL)
+	{
+		if (strcmp(new_node->key, key) == 0)
+			return (new_node->value);
+		new_node = new_node->next;
+	}
 	return (NULL);
-}
-
-
-if (item != NULL)
-{
-	if (strcmp(item->key, key) == 0)
-		return (item->value);
-}
-
-return (NULL);
 }
