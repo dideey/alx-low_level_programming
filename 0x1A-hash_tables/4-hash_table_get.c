@@ -16,7 +16,7 @@ hash_node_t *item = ht->array[i];
 
 if (!ht || !key)
 {
-        return (NULL);
+	return (NULL);
 }
 
 
