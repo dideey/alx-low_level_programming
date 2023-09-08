@@ -14,7 +14,8 @@ unsigned long int i = (hash_djb2((const unsigned char *)key) % (ht->size));
 
 hash_node_t *item = ht->array[i];
 
-if (!ht || !key)
+if (ht == NULL || ht->array == NULL || ht->size == 0 ||
+key == NULL || strlen(key) == 0)
 {
 	return (NULL);
 }
